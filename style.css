@@ -1,0 +1,1995 @@
+@font-face {
+  font-family: "Savoye LET";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Savoye Let"),
+    url("assets/font/Savoye_LET/savoyeletplain.woff") format("woff");
+}
+
+@font-face {
+  font-family: "hv-simplicite";
+  font-style: normal;
+  font-weight: normal;
+  src: local("hv-simplicite"),
+    url("assets/font/hv-simplicite/hv-simplicite-alternative-regular.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "BASKE_1";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE_1"),
+    url("assets/font/baskerville/BASKE1.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE_9";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE_9"),
+    url("assets/font/baskerville/BASKE9.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE_10";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE_10"),
+    url("assets/font/baskerville/BASKE10.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE RVI";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE RVI"),
+    url("assets/font/baskerville/baskervi.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE RVILLE BOLD BT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE RVILLE BOLD BT"),
+    url("assets/font/baskerville/baskerville-bold-bt_1.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE RVILLE BOLD FONT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE RVILLE BOLD FONT"),
+    url("assets/font/baskerville/Baskerville-Bold-font.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE RVILLE BOLD ITALIC BT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE RVILLE BOLD ITALIC BT"),
+    url("assets/font/baskerville/baskervillebolditalicbt.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE RV_1";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE RV 1"),
+    url("assets/font/baskerville/baskrv-l.woff") format("woff");
+}
+
+@font-face {
+  font-family: "BASKE VL_1";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BASKE VL 1"),
+    url("assets/font/baskerville/baskvl.woff") format("woff");
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "BASKE VL_1", sans-serif !important;
+  overflow-x: hidden;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ffcc5f 0%, #473307 100%);
+}
+
+.font-arabic {
+  font-family: "Noto Naskh Arabic", serif !important;
+}
+/* Openner */
+
+#openner {
+  height: 100vh;
+  position: fixed;
+  background: url(assets/img/Section1_BG.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  z-index: 12;
+  transition: 0.5s;
+}
+
+.top-heading-openner {
+  font-family: BASKE VL_1;
+  font-size: 1.8rem;
+  color: #7c5d5a;
+  position: relative;
+  margin-bottom: 1.8rem;
+  margin-top: 100px;
+}
+
+.openner-nama {
+  width: 40%;
+}
+
+.text-group-top {
+  margin-bottom: 6rem;
+  margin-top: -8rem;
+}
+.text-group-bottom {
+  color: #7c5d5a;
+}
+
+.text-group-bottom p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.btn-open {
+  background: linear-gradient(to right, #deccc8, #d2b3ae);
+  border: none !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  color: #7c5d5a;
+  font-family: BASKE 9;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  column-gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.btn-open img {
+  width: 1rem;
+  color: #9a7976;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.flower-one {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+@media (max-width: 990px) {
+  .openner-nama {
+    width: 50%;
+  }
+}
+
+@media (max-width: 890px) {
+  .top-heading-openner {
+    font-size: 1.5rem;
+  }
+
+  .openner-nama {
+    width: 50%;
+  }
+
+  .text-group-bottom p {
+    font-size: 1.2rem;
+  }
+
+  .btn-open {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .openner-nama {
+    width: 60%;
+  }
+}
+
+@media (max-width: 650px) {
+  .top-heading-openner {
+    font-size: 1.2rem;
+  }
+
+  .text-group-bottom p {
+    font-size: 1rem;
+  }
+
+  .btn-open {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 419px) {
+  .top-heading-openner {
+    font-size: 1.2rem;
+    margin-top: -50px;
+  }
+
+  .openner-nama {
+    width: 65%;
+  }
+
+  .text-group-top {
+    margin-bottom: 6rem;
+  }
+
+  .text-group-bottom p {
+    font-size: 1rem;
+  }
+
+  .btn-open {
+    font-size: 1rem;
+  }
+}
+/* Openner End */
+
+/* Section 2 */
+
+#section-dua {
+  background: url(assets/img/Section2_BG.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.dua-content {
+  text-align: center;
+  max-width: 1000px;
+
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.section-dua-text {
+  border: 3px solid #dec87d;
+  padding: 30px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dua-description h4 {
+  margin-bottom: 30px;
+  color: #7c5d5a;
+}
+
+.dua-description img {
+  width: 400px;
+  margin-bottom: 50px;
+}
+
+.dua-description h6 {
+  padding: 0px 20px;
+  font-size: 22px;
+  color: #7c5d5a;
+}
+
+.dua-description p {
+  padding: 0px 30px;
+  color: #7c5d5a;
+  font-family: BASKE RV_1;
+}
+
+.bg-section-dua {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1;
+}
+
+@media (max-width: 890px) {
+  .dua-description img {
+    width: 350px;
+  }
+
+  .dua-description h6 {
+    padding: 0px 100px;
+    font-size: 18px;
+  }
+
+  .dua-description p {
+    padding: 0px 60px;
+    font-size: 15px;
+  }
+
+  .bg-section-dua {
+    top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .dua-description h4 {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .dua-description img {
+    width: 250px;
+    margin-bottom: 80px;
+  }
+
+  .dua-description h6 {
+    padding: 0px 100px;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .dua-description p {
+    padding: 0px 60px;
+    font-size: 12px;
+  }
+
+  .bg-section-dua {
+    top: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .section-dua-text {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+
+  .dua-description h4 {
+    font-size: 18px;
+  }
+
+  .dua-description img {
+    width: 220px;
+    margin-bottom: 80px;
+  }
+
+  .dua-description h6 {
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding: 0px 30px;
+  }
+
+  .dua-description p {
+    font-size: 12px;
+    padding: 0px 30px;
+  }
+
+  .bg-section-dua {
+    top: 0;
+  }
+}
+
+@media (max-width: 419px) {
+  .section-dua-text {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .dua-description h4 {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  .dua-description img {
+    width: 220px;
+    margin-bottom: 80px;
+  }
+
+  .dua-description h6 {
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding: 0px 20px;
+  }
+
+  .dua-description p {
+    font-size: 10px;
+    padding: 0px 20px;
+  }
+
+  .bg-section-dua {
+    top: 0;
+  }
+}
+
+/* Section 3 */
+
+/* Nama Pengantin */
+
+#nama-pengantin {
+  background: url(assets/img/Section3_BG.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.pengantin-text {
+  margin-bottom: 200px;
+}
+
+.nama-description {
+  margin-top: 120px;
+}
+
+.nama-description img {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.nama-description h5 {
+  font-style: Savoye LET;
+  font-size: 20px;
+}
+
+.nama-description h4 {
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.nama-wanita {
+  color: #916e6c;
+  font-family: BASKE RVILLE BOLD BT;
+  font-size: 12px;
+}
+
+.nama-wanita img {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.nama-wanita p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.dengan p {
+  color: #916e6c;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.nama-lelaki {
+  color: #916e6c;
+  font-family: BASKE RVILLE BOLD BT;
+  font-size: 12px;
+}
+
+.nama-lelaki img {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.nama-lelaki p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.bg-nama-pengantin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+  z-index: 1;
+}
+
+@media (max-width: 890px) {
+  .pengantin-text {
+    margin-bottom: 100px;
+  }
+
+  .nama-lelaki p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .bg-nama-pengantin {
+    top: 65%;
+  }
+}
+
+@media (max-width: 760px) {
+  .pengantin-text {
+    margin-bottom: 100px;
+  }
+
+  .nama-description img {
+    width: 150px;
+  }
+
+  .bg-nama-pengantin {
+    top: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  .nama-description img {
+    width: 150px;
+  }
+
+  .nama-description h5 {
+    font-size: 18px;
+  }
+
+  .nama-description h4 {
+    font-size: 20px;
+  }
+
+  .nama-wanita img {
+    width: 450px;
+  }
+
+  .nama-wanita p {
+    font-size: 18px;
+  }
+
+  .nama-lelaki img {
+    width: 450px;
+  }
+
+  .nama-lelaki p {
+    font-size: 18px;
+  }
+
+  .bg-nama-pengantin {
+    top: 55%;
+  }
+}
+
+@media (max-width: 600px) {
+  .nama-description img {
+    width: 120px;
+  }
+
+  .nama-description h5 {
+    font-size: 18px;
+  }
+
+  .nama-description h4 {
+    font-size: 20px;
+  }
+
+  .nama-wanita img {
+    width: 350px;
+  }
+
+  .nama-wanita p {
+    font-size: 18px;
+  }
+
+  .nama-lelaki img {
+    width: 350px;
+  }
+
+  .nama-lelaki p {
+    font-size: 18px;
+  }
+
+  .bg-nama-pengantin {
+    top: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  .pengantin-text {
+    margin-bottom: 80px;
+  }
+
+  .nama-description {
+    margin-top: 60px;
+  }
+
+  .nama-description img {
+    width: 120px;
+  }
+
+  .nama-description h5 {
+    font-size: 14px;
+  }
+
+  .nama-description h4 {
+    font-size: 16px;
+  }
+
+  .nama-wanita img {
+    width: 300px;
+  }
+
+  .nama-wanita p {
+    font-size: 16px;
+  }
+
+  .nama-lelaki img {
+    width: 300px;
+  }
+
+  .nama-lelaki p {
+    font-size: 16px;
+  }
+
+  .bg-nama-pengantin {
+    top: 40%;
+  }
+}
+
+@media (max-width: 419px) {
+  .pengantin-text {
+    margin-bottom: 80px;
+  }
+
+  .nama-description {
+    margin-top: 60px;
+  }
+
+  .nama-description img {
+    width: 90px;
+    margin-bottom: 30px;
+  }
+
+  .nama-description h5 {
+    font-size: 11px;
+  }
+
+  .nama-description h4 {
+    font-size: 13px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+  }
+
+  .nama-wanita img {
+    width: 250px;
+    margin-bottom: 15px;
+  }
+
+  .nama-wanita p {
+    font-size: 13px;
+  }
+
+  .dengan p {
+    font-size: 15px;
+  }
+
+  .nama-lelaki img {
+    width: 250px;
+    margin-bottom: 15px;
+  }
+
+  .nama-lelaki p {
+    font-size: 13px;
+    margin-bottom: 0px;
+  }
+
+  .bg-nama-pengantin {
+    top: 45%;
+  }
+}
+
+/* Section 3 End */
+
+/* Section 4 */
+
+#pelaksanaan {
+  background: url(assets/img/Section4_BG.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.pelaksanaan-cover {
+  margin-top: 70px;
+  margin-bottom: 110px;
+}
+
+.pelaksanaan-title p {
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+
+.pelaksanaan-title img {
+  width: 400px;
+  margin-bottom: 60px;
+}
+
+.pelaksanaan-akad h5 {
+  font-family: BASKE 9;
+  color: #916e6c;
+  font-size: 35px;
+  font-weight: Bold;
+}
+
+.pelaksanaan-resepsi {
+  margin-bottom: 30px;
+}
+
+.pelaksanaan-akad p {
+  font-size: 20px;
+  color: #916e6c;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.pelaksanaan-resepsi h5 {
+  font-family: BASKE 9;
+  color: #916e6c;
+  font-size: 35px;
+  font-weight: Bold;
+}
+
+.pelaksanaan-resepsi p {
+  font-size: 20px;
+  color: #916e6c;
+  line-height: 1.2;
+}
+
+.pelaksanaan-balai img {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.pelaksanaan-alamat {
+  font-size: 20px;
+  color: #916e6c;
+  line-height: 1.2;
+}
+.bg-pelaksanaan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+  z-index: 1;
+}
+
+@media (max-width: 890px) {
+  .bg-pelaksanaan {
+    top: 65%;
+  }
+}
+
+@media (max-width: 800px) {
+  .bg-pelaksanaan {
+    top: 55%;
+  }
+}
+
+@media (max-width: 600px) {
+  .pelaksanaan-title p {
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+
+  .pelaksanaan-title img {
+    width: 300px;
+  }
+
+  .pelaksanaan-akad h5 {
+    font-size: 30px;
+  }
+
+  .pelaksanaan-resepsi h5 {
+    font-size: 30px;
+  }
+
+  .pelaksanaan-resepsi p {
+    font-size: 18px;
+  }
+
+  .pelaksanaan-balai img {
+    width: 350px;
+  }
+
+  .pelaksanaan-alamat {
+    font-size: 18px;
+  }
+  .bg-pelaksanaan {
+    top: 55%;
+  }
+}
+
+@media (max-width: 500px) {
+  .pelaksanaan-title p {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+
+  .pelaksanaan-title img {
+    width: 300px;
+  }
+
+  .pelaksanaan-akad h5 {
+    font-size: 25px;
+  }
+
+  .pelaksanaan-akad p {
+    font-size: 16px;
+  }
+
+  .pelaksanaan-resepsi h5 {
+    font-size: 25px;
+  }
+
+  .pelaksanaan-resepsi p {
+    font-size: 16px;
+  }
+
+  .pelaksanaan-balai img {
+    width: 320px;
+  }
+
+  .pelaksanaan-alamat {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 419px) {
+  .pelaksanaan-cover {
+    margin-top: 10px;
+  }
+
+  .pelaksanaan-title p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .pelaksanaan-title img {
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .pelaksanaan-akad h5 {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+
+  .pelaksanaan-akad p {
+    font-size: 0.9rem;
+  }
+
+  .pelaksanaan-resepsi {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .pelaksanaan-resepsi h5 {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  .pelaksanaan-resepsi p {
+    font-size: 0.9rem;
+  }
+
+  .pelaksanaan-balai img {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .pelaksanaan-alamat {
+    font-size: 0.9rem;
+  }
+}
+
+/* Section 4 End */
+
+/* Section 5 */
+
+#lokasi {
+  background: url(assets/img/Section5_BG.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.lokasi-pengantin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.lokasi-pengantin iframe {
+  width: 600px; /* Sesuaikan ukuran iframe */
+  height: 400px; /* Sesuaikan ukuran iframe */
+  margin-bottom: 30px;
+}
+
+.btn-lokasi {
+  border-radius: 10px;
+  background-color: #9a7976;
+  border: none;
+  padding: 6px 40px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 80px;
+}
+
+.countdown h2 {
+  font-family: BASKE RVILLE BOLD BT;
+  color: #9a7976;
+  font-size: 35px;
+  letter-spacing: 4px;
+  margin-bottom: 30px;
+}
+
+.waktu-wrapper {
+  border-radius: 15px;
+  background-image: linear-gradient(#dac7c1, #d1b4ae, #dac7c1);
+  padding: 6px 5px;
+  color: #916e6c;
+  margin-bottom: 60px;
+}
+
+.angka-waktu {
+  font-size: 50px;
+  margin: 0px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-left: 2px;
+}
+
+.ket-waktu {
+  font-size: 25px;
+}
+
+.bg-lokasi {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+  z-index: 1;
+}
+
+@media (max-width: 890px) {
+  .lokasi-pengantin {
+    margin-top: 100px;
+  }
+
+  .lokasi-pengantin iframe {
+    width: 450px; /* Sesuaikan ukuran iframe */
+    height: 300px; /* Sesuaikan ukuran iframe */
+  }
+
+  .bg-lokasi {
+    top: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  .angka-waktu {
+    font-size: 40px;
+  }
+
+  .ket-waktu {
+    font-size: 20px;
+  }
+  .bg-lokasi {
+    top: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .lokasi-pengantin iframe {
+    width: 380px;
+    height: 250px;
+    margin-top: 50px;
+  }
+  .bg-lokasi {
+    top: 55%;
+  }
+
+  .btn-lokasi {
+    font-size: 18px;
+  }
+
+  .countdown h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .lokasi-pengantin {
+    margin-top: 60px;
+  }
+
+  .lokasi-pengantin iframe {
+    width: 350px; /* Sesuaikan ukuran iframe */
+    height: 250px; /* Sesuaikan ukuran iframe */
+  }
+
+  .btn-lokasi {
+    font-size: 16px;
+  }
+
+  .countdown h2 {
+    font-size: 28px;
+  }
+
+  .angka-waktu {
+  }
+
+  .ket-waktu {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .bg-lokasi {
+    top: 45%;
+  }
+}
+
+@media (max-width: 419px) {
+  .lokasi-pengantin iframe {
+    width: 300px; /* Sesuaikan ukuran iframe */
+    height: 200px; /* Sesuaikan ukuran iframe */
+  }
+
+  .btn-lokasi {
+    font-size: 14px;
+  }
+
+  .countdown {
+    margin-bottom: 30px;
+  }
+  .countdown h2 {
+    font-size: 24px;
+  }
+
+  .waktu-wrapper {
+    margin-bottom: 0px;
+  }
+
+  .angka-waktu {
+    font-size: 25px;
+  }
+
+  .ket-waktu {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+
+  .bg-lokasi {
+    top: 45%;
+  }
+}
+
+/* Section 5 End*/
+
+/* Section 6 */
+
+#walimah {
+  background: url(assets/img/Section6_BG.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.title-walimah img {
+  width: 550px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.grid-item {
+  width: calc(30% - 20px); /* 50% minus margin */
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.bg-walimah {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+  z-index: 1;
+}
+
+@media (max-width: 890px) {
+  .bg-walimah {
+    top: 65%;
+  }
+}
+
+@media (max-width: 700px) {
+  .title-walimah img {
+    width: 450px;
+  }
+
+  .grid-container {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-walimah img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title-walimah img {
+    width: 320px;
+  }
+
+  .bg-walimah {
+    top: 55%;
+  }
+}
+
+@media (max-width: 419px) {
+  .title-walimah img {
+    width: 250px;
+    margin-bottom: 30px;
+  }
+
+  .grid-item {
+    width: calc(50% - 20px); /* 50% minus margin */
+  }
+
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 120px;
+  }
+
+  .bg-walimah {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+    z-index: 1;
+  }
+}
+
+/* Section 6 End */
+
+/* Section 7 */
+
+#story {
+  background: url(assets/img/Section7_BG.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.title-story img {
+  width: 400px;
+  margin-top: 50px;
+}
+
+.title-story p {
+  color: #916e6c;
+  line-height: 1;
+  font-size: 20px;
+}
+
+.pertemuan {
+  margin-top: 20px;
+  color: #916e6c;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.pertemuan h6 {
+  font-size: 20px;
+  font-family: BASKE RVILLE BOLD BT;
+}
+
+.pertemuan p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: -2px 3px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.bg-story {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+  z-index: 1;
+}
+
+@media (max-width: 890px) {
+  #story {
+    background: url(assets/img/Section7_BG.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .title-story img {
+    width: 400px;
+    margin-top: 50px;
+  }
+
+  .title-story p {
+    color: #916e6c;
+    line-height: 1;
+    font-size: 20px;
+  }
+
+  .pertemuan {
+    margin-top: 20px;
+    color: #916e6c;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+
+  .pertemuan h6 {
+    font-size: 20px;
+  }
+
+  .pertemuan p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: -2px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .bg-story {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+    z-index: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  #story {
+    background: url(assets/img/Section7_BG.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .title-story img {
+    width: 350px;
+    margin-top: 50px;
+  }
+
+  .title-story p {
+    color: #916e6c;
+    line-height: 1;
+    font-size: 20px;
+  }
+
+  .pertemuan {
+    margin-top: 20px;
+    color: #916e6c;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+  }
+
+  .pertemuan h6 {
+    font-size: 20px;
+  }
+
+  .pertemuan p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: -2px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .bg-story {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+    z-index: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  #story {
+    background: url(assets/img/Section7_BG.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .title-story img {
+    width: 280px;
+    margin-top: 50px;
+  }
+
+  .title-story p {
+    color: #916e6c;
+    line-height: 1;
+    font-size: 18px;
+  }
+
+  .pertemuan {
+    margin-top: 20px;
+    color: #916e6c;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+  }
+
+  .pertemuan h6 {
+    font-size: 18px;
+  }
+
+  .pertemuan p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: -2px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .bg-story {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+    z-index: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  #story {
+    background: url(assets/img/Section7_BG.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .title-story img {
+    width: 250px;
+    margin-top: 50px;
+  }
+
+  .title-story p {
+    color: #916e6c;
+    line-height: 1;
+    font-size: 16px;
+  }
+
+  .pertemuan {
+    margin-top: 20px;
+    color: #916e6c;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+  }
+
+  .pertemuan h6 {
+    font-size: 16px;
+  }
+
+  .pertemuan p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: -2px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .bg-story {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+    z-index: 1;
+  }
+}
+
+@media (max-width: 419px) {
+  #story {
+    background: url(assets/img/Section7_BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .title-story img {
+    width: 150px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+  }
+
+  .title-story p {
+    color: #916e6c;
+    font-size: 10px;
+  }
+
+  .pertemuan {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .pertemuan h6 {
+    font-size: 12px;
+  }
+
+  .pertemuan p {
+    font-size: 12px;
+    background-color: white;
+    margin: 0px 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: -2px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .bg-story {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+    z-index: 1;
+    margin-top: -100px;
+  }
+}
+
+/* Section 7 End*/
+
+/* Section 8 */
+
+.full-image {
+  background-image: url("assets/img/mempelai.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%; /* Mengisi lebar div */
+  height: 600px; /* Mengisi tinggi div dengan tinggi viewport */
+}
+
+@media (max-width: 890px) {
+  .full-image {
+    height: 600px; /* Mengisi tinggi div dengan tinggi viewport */
+  }
+}
+
+@media (max-width: 700px) {
+  .full-image {
+    height: 500px; /* Mengisi tinggi div dengan tinggi viewport */
+  }
+}
+
+@media (max-width: 600px) {
+  .full-image {
+    height: 400px; /* Mengisi tinggi div dengan tinggi viewport */
+  }
+}
+
+@media (max-width: 500px) {
+  .full-image {
+    height: 300px; /* Mengisi tinggi div dengan tinggi viewport */
+  }
+}
+
+@media (max-width: 419px) {
+  .full-image {
+    height: 250px; /* Mengisi tinggi div dengan tinggi viewport */
+  }
+}
+
+/* Section 8 End */
+
+/* Section 9 */
+
+#rsvp {
+  background: url(assets/img/Section8_BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.title-rsvp {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+.title-rsvp img {
+  width: 300px;
+}
+
+.title-rsvp p {
+  font-size: 20px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.form-rsvp {
+  margin: 0px 20px;
+}
+form {
+  margin-bottom: 15px;
+}
+
+.form-group {
+  font-size: 20px;
+}
+
+input[type="text"],
+textarea {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-rsvp {
+  background: linear-gradient(to right, #deccc8, #d2b3ae);
+  border: none;
+  font-family: hv-simplicite;
+  padding: 10px 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #916e6c;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.btn-rsvp {
+  margin-top: 20px;
+}
+
+.konfirmasi {
+  border: 2px solid gold;
+  font-size: 20px;
+}
+
+.deskripsi-konfirmasi {
+  margin: 10px;
+  background-color: #9a7976;
+}
+
+.content-konfirmasi {
+  margin: 10px 35px;
+  padding: 10px 50px;
+}
+
+.guest-list {
+  display: flex;
+}
+
+.hr {
+  margin: 0px;
+}
+.nama {
+  margin-top: 10px;
+  display: flex;
+}
+
+.guest-name {
+  font-weight: bold;
+  background-color: white;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  padding: 0px 10px;
+  margin-bottom: 5px;
+}
+
+.attendance {
+  font-style: italic;
+  margin-left: 10px;
+  color: white;
+}
+
+.pesan-box {
+  margin-top: 0px;
+  text-align: left;
+  color: white;
+}
+
+.pagination {
+  justify-content: space-between;
+  display: flex;
+}
+.pagination-item {
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 890px) {
+  .title-rsvp img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-rsvp img {
+    width: 200px;
+  }
+
+  .form-group {
+    font-size: 18px;
+  }
+
+  .btn-rsvp {
+    font-size: 18px;
+  }
+
+  .btn-rsvp {
+    margin-top: 20px;
+  }
+
+  .konfirmasi {
+    font-size: 18px;
+  }
+
+  .content-konfirmasi {
+    margin: 10px 15px;
+  }
+
+  .pagination-item {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .title-rsvp img {
+    width: 150px;
+  }
+
+  .title-rsvp p {
+    font-size: 16px;
+  }
+
+  .form-group {
+    font-size: 16px;
+  }
+
+  .btn-rsvp {
+    font-size: 16px;
+  }
+
+  .konfirmasi {
+    font-size: 16px;
+  }
+
+  .pagination-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 419px) {
+  .content-rsvp {
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+  .title-rsvp img {
+    width: 100px;
+  }
+
+  .title-rsvp p {
+    font-size: 12px;
+  }
+
+  .form-group {
+    font-size: 12px;
+  }
+
+  .btn-rsvp {
+    font-size: 12px;
+  }
+
+  .konfirmasi {
+    font-size: 14px;
+  }
+
+  .content-konfirmasi {
+    margin: 10px 0px;
+  }
+
+  .pagination-item {
+    font-size: 12px;
+  }
+}
+
+/* Section 9 end */
+
+/* Section 10 */
+#terima-kasih {
+  background: url(assets/img/Section9_BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.terima-kasih-title h1 {
+  color: #a48a73;
+  font-family: BASKE VL_1;
+  font-size: 55px;
+}
+
+.terima-kasih-title h5 {
+  font-size: 30px;
+  dont-weight: bold;
+  margin-bottom: 50px;
+}
+
+.terima-kasih-title h6 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.terima-kasih-title p {
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+
+.ucapan {
+  color: #7c5d5a;
+}
+
+.ucapan p {
+  font-size: 14px;
+  font-family: BASKE RVILLE BOLD BT;
+}
+
+.ucapan h6 {
+  font-size: 14px;
+  font-family: BASKE RVILLE BOLD BT;
+}
+
+.ucapan-cp {
+  width: 120px;
+}
+
+.ucapan h5 {
+  font-size: 14px;
+  font-family: BASKE RVILLE BOLD BT;
+  margin-top: 20px;
+}
+
+.ucapan-invaite {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.bg-ucapan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Menggunakan 100% agar gambar mengisi lebar section */
+  z-index: 1;
+}
+
+@media (max-width: 700px) {
+  .terima-kasih-title h1 {
+    font-size: 45px;
+  }
+
+  .terima-kasih-title h5 {
+    font-size: 25px;
+  }
+
+  .terima-kasih-title h6 {
+    font-size: 18px;
+  }
+
+  .terima-kasih-title p {
+    font-size: 16px;
+  }
+
+  .ucapan p {
+    font-size: 12px;
+  }
+
+  .ucapan h6 {
+    font-size: 12px;
+  }
+
+  .ucapan h5 {
+    font-size: 12px;
+  }
+
+  .ucapan-invaite {
+    width: 90px;
+  }
+}
+
+@media (max-width: 500px) {
+  .terima-kasih-title h1 {
+    font-size: 30px;
+  }
+
+  .terima-kasih-title h5 {
+    font-size: 20px;
+  }
+
+  .terima-kasih-title h6 {
+    font-size: 16px;
+  }
+
+  .terima-kasih-title p {
+    font-size: 14px;
+  }
+
+  .ucapan p {
+    font-size: 10px;
+  }
+
+  .ucapan h6 {
+    font-size: 10px;
+  }
+
+  .ucapan h5 {
+    font-size: 10px;
+  }
+
+  .ucapan-invaite {
+    width: 90px;
+  }
+}
+
+@media (max-width: 419px) {
+  .terima-kasih-title h1 {
+    font-size: 27px;
+  }
+
+  .terima-kasih-title h5 {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .terima-kasih-title h6 {
+    font-size: 12px;
+  }
+
+  .terima-kasih-title p {
+    font-size: 10px;
+    margin-bottom: 50px;
+  }
+
+  .ucapan p {
+    font-size: 8px;
+  }
+
+  .ucapan h6 {
+    font-size: 8px;
+  }
+
+  .ucapan-cp {
+    width: 100px;
+  }
+
+  .ucapan h5 {
+    font-size: 8px;
+  }
+
+  .ucapan-invaite {
+    width: 80px;
+  }
+
+  .bg-ucapan {
+    top: 65%;
+  }
+}
+
+/* Section 10 End */
+
+/* Nasyid */
+.music-icon {
+  position: fixed;
+  color: white;
+  background-color: #916e6c;
+  padding: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 1px 1px 5px #00000052;
+  z-index: 10;
+  transition: 0.4s;
+}
+
+.music-icon:hover {
+  filter: brightness(1.3);
+}
+
+.music-icon.disabled {
+  filter: grayscale();
+}
